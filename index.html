@@ -28,23 +28,23 @@
 
 <body class="bg-gray-200">        <!--Set background to white-->
  <div>
-<!--Navigation-->
+<!--Navigation/component 1-->
     <nav class="mx-auto bg-white">
        <div class="relative flex flex-wrap items-center justify-between w-full shrink-0">
         <div class="px-4 py-4">
             <img class="h-8 w-13" src="./assets/component-1/navigation/cache-bank-logo.png" alt="cache bank logo">
         </div>               
         <div class="hidden md:flex items-center justify-between text-black gap-12">          <!--Ancor tags-->
-            <a class="text-lg font-normal text-dark-grey-700 hover:text-teal-400 cursor-default" href="">Products</a>
-            <a class="text-lg font-normal text-dark-grey-700 hover:text-teal-400 cursor-default" href="">Get Started</a>
-            <a class="text-lg font-normal text-dark-grey-700 hover:text-teal-400 cursor-default" href="">Features</a>
-            <a class="text-lg font-normal text-dark-grey-700 hover:text-teal-400 cursor-default" href="">Contact</a>
+            <a class="text-lg font-normal text-dark-grey-700 hover:text-teal-400 cursor-default" href="#product">Product</a>
+            <a class="text-lg font-normal text-dark-grey-700 hover:text-teal-400 cursor-default" href="#features">Features</a>
+            <a class="text-lg font-normal text-dark-grey-700 hover:text-teal-400 cursor-default" href="#pricing">Get Started</a>
+            <a class="text-lg font-normal text-dark-grey-700 hover:text-teal-400 cursor-default" href="#company">Contact</a>
         </div>
         <div class="hidden gap-3 items-center md:flex">   <!--sign up and log in buttons-->
             <button class="text-lg font-normal text-dark-grey-800 hover:text-teal-400">Log In</button>
-            <button class="px-4 py-2 font-bold text-white bg-blue-900 rounded-xl hover:bg-teal-300">Sign Up</button>
+            <button class="px-4 py-2 font-bold text-white bg-blue-900 rounded-xl hover:bg-teal-300 mr-3">Sign Up</button>
         </div>
-        <button class="py-4 md:hidden" id="hamburger">   <!--Hamburger toggle-->
+        <button class="py-4 md:hidden mr-3" id="hamburger">   <!--Hamburger toggle-->
             <svg
             fill="none"
             viewBox="0 0 24 24"
@@ -77,10 +77,10 @@
         <div class="absolute hidden md:hidden flex md:flex flex-col items-start                                                 
         justify-center w-full gap-3 overflow-hidden bg-white max-h-screen top-full px-4 py-8 shadow-main" id="mobile-menu">  
            
-                <a class="text-lg font-normal text-dark-grey-700 hover:text-teal-400 cursor-default" href="">Products</a>
-                <a class="text-lg font-normal text-dark-grey-700 hover:text-teal-400 cursor-default" href="">Get Started</a>
-                <a class="text-lg font-normal text-dark-grey-700 hover:text-teal-400 cursor-default" href="">Features</a>
-                <a class="text-lg font-normal text-dark-grey-700 hover:text-teal-400 cursor-default" href="">Contact</a>
+                <a class="text-lg font-normal text-dark-grey-700 hover:text-teal-400 cursor-default" href="#product">Products</a>
+                <a class="text-lg font-normal text-dark-grey-700 hover:text-teal-400 cursor-default" href="#features">Features</a>
+                <a class="text-lg font-normal text-dark-grey-700 hover:text-teal-400 cursor-default" href="#pricing">Pricing</a>
+                <a class="text-lg font-normal text-dark-grey-700 hover:text-teal-400 cursor-default" href="#company">Company</a>
         
             
                 <button class="text-lg font-normal text-dark-grey-800 hover:text-teal-400">Log In</button>
@@ -89,16 +89,20 @@
     </div>
     </nav>
 <!--Body-->  
-    <div class="w-full">
+ <!--Component 2-->
+    <div class="w-full" id="product">
         <!-- Wide full-width container for additional content -->
     </div>
-    <div class="container mx-auto">
+<!--Component 3-->
+    <div class="container mx-auto" id="features">
         <!-- Centered container for more content -->
     </div>
-    <div class="w-full">
+<!--Component 4-->
+    <div class="w-full" id="pricing">
         <!-- Wide full-width container for additional content -->
     </div>
-    <div class="w-full">
+<!--Component 5-->
+    <div class="w-full" id="company">
         <!-- Wide full-width container for additional content -->
     </div>
  </div>
