@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -30,7 +32,7 @@
     <nav class="mx-auto bg-white">
        <div class="relative flex flex-wrap items-center justify-between w-full shrink-0">
         <div class="px-4 py-4">
-            <img class="h-10" src="./assets/component-1/navigation/cache-bank-logo.png">
+            <img class="h-10" src="./assets/component-1/navigation/cache-bank-logo.png" alt="cache bank logo">
         </div>               
         <div class="md:flex items-center justify-between text-black gap-12">          <!--Ancor tags-->
             <a class="text-lg font-normal text-dark-grey-700 hover:text-teal-400 cursor-default" href="">Products</a>
@@ -42,7 +44,35 @@
             <button class="text-lg font-normal text-dark-grey-800 hover:text-teal-400">Log In</button>
             <button class="px-4 py-2 font-bold text-white bg-blue-900 rounded-xl hover:bg-teal-300">Sign Up</button>
         </div>
-        <button></button>           
+        <button class="py-4 md:hidden" id="hamburger">   <!--Hamburger toggle-->
+            <svg
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            class="h-6 w-6"
+            fill="none"
+            >
+            <g clip-path="url(#clip0_429_11066)">
+              <path
+                d="M3 6.00092H21M3 12.0009H21M3 18.0009H21"
+                stroke="#292929"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_429_11066">
+                <rect
+                  width="24"
+                  height="24"
+                  fill="white"
+                  transform="translate(0 0.000915527)"
+                />
+              </clipPath>
+            </defs>
+          </svg>
+        </button>           
         <div></div>
     </div>
     </nav>
@@ -65,10 +95,14 @@
     <div class="w-full bg-green-500">
         <!-- Full-width footer container with green background -->
     </div>
-
+    <script> //inner J.S
+        document.getElementById("hamburger").addEventListener('click', function() {alert("hello!");});
+    </script>    <!--inner J.S-->
     <script src="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/motion-tailwind/scripts/plugins/countup.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/motion-tailwind/scripts/countto.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/motion-tailwind/scripts/plugins/leaflet.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/motion-tailwind/scripts/maps.js"></script>
     <script src="./assets/js/loopple/loopple.js"></script>
 </body>
+
+</html>
